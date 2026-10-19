@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!--
+    GitHub Pages など、ルート以外のパスで配信するときは
+    `flutter build web --base-href /mission/` のように指定すると、ここが置き換わる。
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="決めたミッションをこなしてポイントを貯め、自分にご褒美を。個人用のミッション＆ご褒美管理アプリ">
+  <meta name="theme-color" content="#8FA6E6">
+
+  <!-- iOS でホーム画面に追加したときの設定 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Mission">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Mission Reward</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    /* Flutter が起動するまでの間も、アプリの標準背景と同じ色を出しておく。 */
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: linear-gradient(165deg, #8FA6E6 0%, #B9A7E4 45%, #F0BFAE 100%) fixed;
+    }
+  </style>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

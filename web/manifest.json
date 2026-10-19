@@ -1,0 +1,36 @@
+{
+    "name": "Mission Reward",
+    "short_name": "Mission",
+    "description": "決めたミッションをこなしてポイントを貯め、自分にご褒美を。個人用のミッション＆ご褒美管理アプリ",
+    "lang": "ja",
+    "start_url": ".",
+    "scope": ".",
+    "display": "standalone",
+    "background_color": "#B9A7E4",
+    "theme_color": "#8FA6E6",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

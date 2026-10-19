@@ -1,0 +1,23 @@
+name: mission_reward_app
+description: Personal mission and reward point manager
+publish_to: none
+version: 0.2.0+2
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  shared_preferences: ^2.5.3
+  file_picker: ^10.1.9
+  intl: ^0.20.2
+  path_provider: ^2.1.5
+  image: ^4.5.4
+  web: ^1.1.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
