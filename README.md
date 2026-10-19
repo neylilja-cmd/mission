@@ -48,3 +48,7 @@ main に変更を入れると、GitHub Actions がテストとビルドを行い
 
 日本語フォントとして [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP)（SIL Open Font License 1.1）を、
 かな・英数記号と JIS 第1・第2水準漢字に絞って同梱しています（`assets/fonts/`）。
+
+## ライセンス
+[MIT License](LICENSE)。自由に使ったり改造したりできますが、動作やデータについての保証はありません。
+同梱フォント（Noto Sans JP）は SIL Open Font License 1.1 です。
