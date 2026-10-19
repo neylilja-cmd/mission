@@ -21,3 +21,9 @@ dev_dependencies:
   flutter_lints: ^6.0.0
 flutter:
   uses-material-design: true
+  fonts:
+    # Noto Sans JP（SIL Open Font License）。オフラインでも日本語を表示できるよう同梱する。
+    # 容量を抑えるため、かな・英数記号と JIS 第1・第2水準漢字に絞っている。
+    - family: NotoSansJP
+      fonts:
+        - asset: assets/fonts/NotoSansJP.ttf

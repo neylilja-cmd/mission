@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../ui/ui_constants.dart';
+
 /// ミッション達成／褒美受け取りの瞬間だけ表示する、ポップアップ演出。
 /// 画面中央にポイント変化がバウンドしながら出て、少し経つと自動的に消える。
 /// 通常時の画面はシンプルにしたいので、演出はこの一瞬だけに留める。
@@ -92,11 +94,11 @@ class _CelebrationCardState extends State<_CelebrationCard> with SingleTickerPro
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text(widget.message, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                    Text(widget.message, style: const TextStyle(fontFamily: appFontFamily, fontSize: 18, fontWeight: FontWeight.bold)),
                     const SizedBox(height: 8),
                     Text(
                       widget.pointsText,
-                      style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: widget.color),
+                      style: TextStyle(fontFamily: appFontFamily, fontSize: 32, fontWeight: FontWeight.bold, color: widget.color),
                     ),
                   ],
                 ),

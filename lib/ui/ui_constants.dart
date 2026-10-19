@@ -39,12 +39,17 @@ abstract final class UiConstants {
   static const double contentMaxWidth = 640;
 }
 
+/// アプリに同梱している日本語フォント。
+/// ブラウザ版でもネットから取ってこずに済むので、オフラインでも文字が欠けない。
+const appFontFamily = 'NotoSansJP';
+
 /// アプリ全体で使う文字スタイル（5段階）。
 /// 壁紙の上ではグレーが薄すぎて読みにくくなるため、色は黒系でほぼ統一し、
 /// 太さ・大きさで役割を区別する。
 abstract final class AppTextStyles {
   /// ポイント残高など、一番大きく見せる数字。
   static const display = TextStyle(
+    fontFamily: appFontFamily,
     fontSize: 44,
     fontWeight: FontWeight.w800,
     height: 1.1,
@@ -53,16 +58,16 @@ abstract final class AppTextStyles {
   );
 
   /// ミッション名・褒美名・見出し。
-  static const title = TextStyle(fontSize: 17, fontWeight: FontWeight.w700, color: AppColors.text);
+  static const title = TextStyle(fontFamily: appFontFamily, fontSize: 17, fontWeight: FontWeight.w700, color: AppColors.text);
 
   /// 本文・ボタン内の文字。
-  static const body = TextStyle(fontSize: 15, fontWeight: FontWeight.w500, color: AppColors.text);
+  static const body = TextStyle(fontFamily: appFontFamily, fontSize: 15, fontWeight: FontWeight.w500, color: AppColors.text);
 
   /// ラベル・補足（「現在のポイント」「期限」など）。
-  static const label = TextStyle(fontSize: 13, fontWeight: FontWeight.w500, color: AppColors.textSub);
+  static const label = TextStyle(fontFamily: appFontFamily, fontSize: 13, fontWeight: FontWeight.w500, color: AppColors.textSub);
 
   /// さらに小さい補足。
-  static const small = TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: AppColors.textSub);
+  static const small = TextStyle(fontFamily: appFontFamily, fontSize: 12, fontWeight: FontWeight.w500, color: AppColors.textSub);
 }
 
 /// アプリ全体のテーマ。ダイアログ・入力欄・ボタンをパネルと同じ雰囲気に揃える。
@@ -76,6 +81,7 @@ ThemeData buildAppTheme() {
 
   return ThemeData(
     useMaterial3: true,
+    fontFamily: appFontFamily,
     colorScheme: scheme,
     scaffoldBackgroundColor: Colors.transparent,
     dialogTheme: DialogThemeData(
