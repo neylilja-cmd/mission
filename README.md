@@ -45,3 +45,6 @@ flutter run -d windows    # Windows版を実行
 ```
 
 main に変更を入れると、GitHub Actions がテストとビルドを行い、GitHub Pages に公開します。
+
+日本語フォントとして [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP)（SIL Open Font License 1.1）を、
+かな・英数記号と JIS 第1・第2水準漢字に絞って同梱しています（`assets/fonts/`）。

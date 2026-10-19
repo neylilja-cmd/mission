@@ -27,6 +27,7 @@ class StampBadge extends StatelessWidget {
         child: Text(
           label,
           style: TextStyle(
+            fontFamily: appFontFamily,
             color: color,
             fontWeight: FontWeight.w800,
             fontSize: 13,
